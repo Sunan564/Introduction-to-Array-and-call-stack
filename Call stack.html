@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h2>Call Stack in JavaScript [Functions]</h2>
+
+    <h2 id="demo"></h2>
+
+    <script>
+      function add(a, b) {
+        return a + b;
+      }
+
+      function avarage(a, b) {
+        return add(a, b) / 2;
+      }
+
+      var result = avarage(10, 20);
+
+      document.getElementById("demo").innerHTML = result;
+    </script>
+  </body>
+</html>
